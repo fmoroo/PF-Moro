@@ -74,6 +74,10 @@
    color: rgb(255, 255, 255);
 
 }
+
+.nav-list li a:hover{
+   text-decoration: underline;
+}
  
 .p1{
     padding: 25px 50px;
@@ -144,4 +148,9 @@ svg{
    fill: rgb(248, 247, 247);
    position: relative;
    top: 25px;
+}
+
+.video{
+   display: flex;
+   justify-content: center;
 }
