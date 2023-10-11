@@ -155,7 +155,7 @@ svg{
    justify-content: center;
 }
 
-/*GRID EQUIPOS*/
+/*GRID BIOGRAFIA Y EQUIPOS*/
 
 .header{
    grid-area: header;
@@ -189,7 +189,7 @@ svg{
       "footer footer";
    }
 
-
+      
    .nav{
       position: absolute;
       top: 0;
@@ -207,6 +207,9 @@ svg{
    h1{
       display: none;
    }
-   
 
 }
+
+
+
+
