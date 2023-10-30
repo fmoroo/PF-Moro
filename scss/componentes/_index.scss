@@ -1,0 +1,13 @@
+main{
+    background-color: rgb(246, 243, 238);
+
+    h2{
+        @extend %disposicion;
+        font-family: 'DM Serif Display', serif;
+        font-size: 45px;
+        padding: 10px 0px 10px 0px; 
+    }
+}
+
+
+
