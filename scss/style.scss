@@ -14,32 +14,34 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    background-color: $bg-ppl;
+    background-color: $color1;
 
     h1{
         @extend %disposicion;
         font-family: 'DM Serif Display', serif;
         font-size: 50px;
-        color: $bg-ppl;
+        color: $color2;
     }
 
     .nav-list li a{
         font-family: sans-serif;
         font-size: 2rem;
         text-decoration: none;
-        color: $bg-sec;
+        color: $color2;
        
-    }
+        &:hover{
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
 
-    &:hover{
-        text-decoration: underline;
+    
     }
 }
 
 .logo{
     max-width: 6rem;
    border: 3px solid;
-   border-color: rgb(255, 255, 255);
+   border-color: $color2;
 }
 
 .nav-list{
@@ -49,17 +51,18 @@ header{
 }  
 
 main{
-    background-color: rgb(246, 243, 238);
+    background-color: $color2;
 }
 
 footer{
-    background-color: rgb(0, 0, 0) ;
+    background-color: $color1 ;
+    display: flex;
     h3{
         @extend %disposicion;
         font-family: 'Volkhov', serif;
         font-size: 35px;
         margin: 20px 15px;
-        color: rgb(255, 255, 255);
+        color: $color2;
     }
 }
 
@@ -72,12 +75,11 @@ svg{
 /*textos y parrafos*/
 
 .titulo{
+    @extend %disposicion;
     font-family: 'Volkhov', serif;
     font-size: 35px;
-    text-align: center;
-    text-decoration: underline;
     margin: 20px 15px;
-    color: rgb(0, 0, 0)
+    color: $color1;
 }
    
 .presentacion{
@@ -101,6 +103,7 @@ svg{
 .individuales{
     display: flex;
 }
+
 
 /*imagenes y videos*/
   

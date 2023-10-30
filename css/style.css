@@ -1,4 +1,4 @@
-footer h3, header h1, main h2 {
+.titulo, footer h3, header h1, main h2 {
   text-align: center;
   text-decoration: underline;
 }
@@ -27,7 +27,7 @@ header {
 header h1 {
   font-family: "DM Serif Display", serif;
   font-size: 50px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 header .nav-list li a {
   font-family: sans-serif;
@@ -35,8 +35,9 @@ header .nav-list li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-header:hover {
+header .nav-list li a:hover {
   text-decoration: underline;
+  transform: scale(1.1);
 }
 
 .logo {
@@ -52,11 +53,12 @@ header:hover {
 }
 
 main {
-  background-color: rgb(246, 243, 238);
+  background-color: rgb(255, 255, 255);
 }
 
 footer {
   background-color: rgb(0, 0, 0);
+  display: flex;
 }
 footer h3 {
   font-family: "Volkhov", serif;
@@ -75,8 +77,6 @@ svg {
 .titulo {
   font-family: "Volkhov", serif;
   font-size: 35px;
-  text-align: center;
-  text-decoration: underline;
   margin: 20px 15px;
   color: rgb(0, 0, 0);
 }
