@@ -24,32 +24,37 @@ header {
   padding: 2rem;
   background-color: rgb(0, 0, 0);
 }
+header .logo {
+  max-width: 6rem;
+  border: 3px solid;
+  border-color: rgb(255, 255, 255);
+}
 header h1 {
   font-family: "DM Serif Display", serif;
   font-size: 50px;
   color: rgb(255, 255, 255);
 }
-header .nav-list li a {
+header nav {
+  display: flex;
+}
+header nav .nav-list {
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+}
+header nav .nav-list li {
+  display: flex;
+}
+header nav .nav-list li a {
   font-family: sans-serif;
   font-size: 2rem;
   text-decoration: none;
   color: rgb(255, 255, 255);
+  transition: 1s;
 }
-header .nav-list li a:hover {
+header nav .nav-list li a:hover {
   text-decoration: underline;
   transform: scale(1.1);
-}
-
-.logo {
-  max-width: 6rem;
-  border: 3px solid;
-  border-color: rgb(255, 255, 255);
-}
-
-.nav-list {
-  display: flex;
-  list-style-type: none;
-  gap: 3rem;
 }
 
 main {

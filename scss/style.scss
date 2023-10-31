@@ -16,39 +16,56 @@ header{
     padding: 2rem;
     background-color: $color1;
 
+    .logo{
+        max-width: 6rem;
+       border: 3px solid;
+       border-color: $color2;
+    }
+
     h1{
         @extend %disposicion;
         font-family: 'DM Serif Display', serif;
         font-size: 50px;
         color: $color2;
     }
-
-    .nav-list li a{
-        font-family: sans-serif;
-        font-size: 2rem;
-        text-decoration: none;
-        color: $color2;
-       
-        &:hover{
-            text-decoration: underline;
-            transform: scale(1.1);
-        }
+    nav{
+        display: flex;
 
     
-    }
+
+        .nav-list{
+            display: flex;
+            list-style-type: none;
+            gap: 3rem;
+        
+        
+            li{
+                display: flex;
+            
+                a{
+                    font-family: sans-serif;
+                    font-size: 2rem;
+                    text-decoration: none;
+                    color: $color2;
+                    transition: 1s;
+                    
+
+
+
+                    &:hover{
+                        text-decoration: underline;
+                        transform: scale(1.1);
+                    }
+                }
+            
+            }  
+        }
+    }    
 }
 
-.logo{
-    max-width: 6rem;
-   border: 3px solid;
-   border-color: $color2;
-}
 
-.nav-list{
-    display: flex;
-    list-style-type: none;
-    gap: 3rem;
-}  
+
+
 
 main{
     background-color: $color2;
