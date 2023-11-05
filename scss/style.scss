@@ -118,6 +118,7 @@ svg{
 .festejo-video{
     font-size: 25px;
     font-weight: bold;
+    text-align: center;
 }
 
 .individuales{
@@ -128,10 +129,9 @@ svg{
 /*imagenes y videos*/
   
 .img-video{
-    padding: 30px 50px;
+    justify-content: left;
     display: flex;
-    border: 5px solid;
-    background-color: rgb(3, 188, 255);
+    margin: 1rem;
 }
   
 .foto{
@@ -305,9 +305,7 @@ svg{
         display: none;
     }
 
-    
-
-    
-   
 }
+
+
 
