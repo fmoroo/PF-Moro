@@ -1,0 +1,612 @@
+@import "../base/vars";
+
+
+@media (max-width :390px){
+    body{
+        /*display: grid;
+        grid-template-columns: 2.5fr 2.5fr 2.5fr;
+        grid-template-rows: 0.5fr 5fr 0.5fr;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    
+        .header{
+            grid-area: header;
+        }
+           
+        .main{
+            grid-area: main;
+        }
+           
+        .footer{
+            grid-area: footer;
+        }*/
+    
+    
+        background-color: red;
+    
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem;
+            background-color: $color1;
+    
+            .logo{
+                max-width: 6rem;
+            border: 3px solid;
+            border-color: $color2;
+            }
+    
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                font-family: 'DM Serif Display', serif;
+                font-size: 50px;
+                color: $color2;
+            }
+            nav{
+                display: flex;
+    
+            
+    
+                .nav-list{
+                    display: flex;
+                    list-style-type: none;
+                    gap: 3rem;
+                
+                
+                    li{
+                        display: flex;
+                    
+                        a{
+                            font-family: sans-serif;
+                            font-size: 2rem;
+                            text-decoration: none;
+                            color: $color2;
+                            transition: 1s;
+                            
+    
+    
+    
+                            &:hover{
+                                text-decoration: underline;
+                                transform: scale(1.1);
+                            }
+                        }
+                    
+                    }  
+                }
+            }    
+        }
+    
+        main{
+            background-color: $color2;
+    
+            h2{
+                text-align: center;
+                text-decoration: underline;
+                font-family: 'DM Serif Display', serif;
+                font-size: 45px;
+                padding: 10px 0px 10px 0px; 
+            }
+    
+            .presentacion{
+                text-align: center;
+                padding: 20px 50px;
+                font-size: 25px;
+                font-family: 'DM Serif Display', serif;
+            }
+    
+            .img-video{
+                justify-content: left;
+                display: flex;
+                margin: 1rem;
+    
+                .foto{
+                    border: 5px solid;
+                    border-color: rgb(4, 4, 3);
+                    display: flex;
+                }
+    
+                .festejo-video{
+                    font-size: 25px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+    
+            }
+    
+            .p1{
+                padding: 25px 50px;
+                font-size: 25px;
+                font-family: 'DM Serif Display', serif;
+            }
+    
+            .ciudad-casa{
+                display: flex;
+    
+                .casa{
+                    display: flex;
+                    border: 5px solid;
+                    margin: 10px;
+                    border-radius: 15px;
+    
+                    .festejo-video{
+                        font-size: 25px;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                }
+            }
+    
+            .titulo{
+                text-align: center;
+                text-decoration: underline;
+                font-family: 'Volkhov', serif;
+                font-size: 35px;
+                margin: 20px 15px;
+                color: $color1;
+            }
+    
+            .video{
+                display: flex;
+                justify-content: center;
+    
+                .debut{
+                    border: 5px solid;
+                    margin: 5px 15px 5px 15px;
+                }
+            }
+    
+            .logros{
+                display: flex;
+                flex-wrap: wrap; 
+                justify-content: center;
+    
+            .titulos{
+                    width: 30%;
+                    border: 5px solid;
+                    margin: 10px;
+                }
+            }
+    
+            .individuales{
+                display: flex;
+            }
+    
+        }
+    
+    
+        footer{
+            background-color: $color1 ;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            
+            h3{
+                text-align: center;
+                text-decoration: underline;
+                font-family: 'Volkhov', serif;
+                font-size: 35px;
+                margin: 20px 15px;
+                color: $color2;
+            }
+    
+            svg{
+                fill: rgb(248, 247, 247);
+                position: relative;
+                top: 25px;
+            }
+    
+        }
+    }
+    
+}
+
+@media (max-width: 576px) and (min-width:390px) {
+    body{
+        /*display: grid;
+        grid-template-columns: 2.5fr 2.5fr 2.5fr;
+        grid-template-rows: 0.5fr 5fr 0.5fr;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    
+        .header{
+            grid-area: header;
+        }
+           
+        .main{
+            grid-area: main;
+        }
+           
+        .footer{
+            grid-area: footer;
+        }*/
+    
+        background-color: violet;
+    
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem;
+            background-color: $color1;
+    
+            .logo{
+            max-width: 6rem;
+            border: 3px solid;
+            border-color: $color2;
+            }
+    
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                font-family: 'DM Serif Display', serif;
+                font-size: 50px;
+                color: $color2;
+            }
+            nav{
+                display: flex;
+    
+            
+    
+                .nav-list{
+                    display: flex;
+                    list-style-type: none;
+                    gap: 3rem;
+                
+                
+                    li{
+                        display: flex;
+                    
+                        a{
+                            font-family: sans-serif;
+                            font-size: 2rem;
+                            text-decoration: none;
+                            color: $color2;
+                            transition: 1s;
+                            
+    
+    
+    
+                            &:hover{
+                                text-decoration: underline;
+                                transform: scale(1.1);
+                            }
+                        }
+                    
+                    }  
+                }
+            }    
+        }
+    
+        main{
+            background-color: $color2;
+    
+            h2{
+                text-align: center;
+                text-decoration: underline;
+                font-family: 'DM Serif Display', serif;
+                font-size: 45px;
+                padding: 10px 0px 10px 0px; 
+            }
+    
+            .presentacion{
+                text-align: center;
+                padding: 20px 50px;
+                font-size: 25px;
+                font-family: 'DM Serif Display', serif;
+            }
+    
+            .img-video{
+                justify-content: left;
+                display: flex;
+                margin: 1rem;
+    
+                .foto{
+                    border: 5px solid;
+                    border-color: rgb(4, 4, 3);
+                    display: flex;
+                }
+    
+                .festejo-video{
+                    font-size: 25px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+    
+            }
+    
+            .p1{
+                padding: 25px 50px;
+                font-size: 25px;
+                font-family: 'DM Serif Display', serif;
+            }
+    
+            .ciudad-casa{
+                display: flex;
+    
+                .casa{
+                    display: flex;
+                    border: 5px solid;
+                    margin: 10px;
+                    border-radius: 15px;
+    
+                    .festejo-video{
+                        font-size: 25px;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                }
+            }
+    
+            .titulo{
+                text-align: center;
+                text-decoration: underline;
+                font-family: 'Volkhov', serif;
+                font-size: 35px;
+                margin: 20px 15px;
+                color: $color1;
+            }
+    
+            .video{
+                display: flex;
+                justify-content: center;
+    
+                .debut{
+                    border: 5px solid;
+                    margin: 5px 15px 5px 15px;
+                }
+            }
+    
+            .logros{
+                display: flex;
+                flex-wrap: wrap; 
+                justify-content: center;
+    
+            .titulos{
+                    width: 30%;
+                    border: 5px solid;
+                    margin: 10px;
+                }
+            }
+    
+            .individuales{
+                display: flex;
+            }
+    
+        }
+    
+    
+        footer{
+            background-color: $color1 ;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            
+            h3{
+                text-align: center;
+                text-decoration: underline;
+                font-family: 'Volkhov', serif;
+                font-size: 35px;
+                margin: 20px 15px;
+                color: $color2;
+            }
+    
+            svg{
+                fill: rgb(248, 247, 247);
+                position: relative;
+                top: 25px;
+            }
+    
+        }
+    }
+    
+}
+
+@media (max-width: 992px) and (min-width:576px) {
+    body{
+        /*display: grid;
+        grid-template-columns: 2.5fr 2.5fr 2.5fr;
+        grid-template-rows: 0.5fr 5fr 0.5fr;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    
+        .header{
+            grid-area: header;
+        }
+           
+        .main{
+            grid-area: main;
+        }
+           
+        .footer{
+            grid-area: footer;
+        }*/
+    
+        background-color: yellow;
+    
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem;
+            background-color: $color1;
+    
+            .logo{
+                max-width: 6rem;
+            border: 3px solid;
+            border-color: $color2;
+            }
+    
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                font-family: 'DM Serif Display', serif;
+                font-size: 50px;
+                color: $color2;
+            }
+            nav{
+                display: flex;
+    
+            
+    
+                .nav-list{
+                    display: flex;
+                    list-style-type: none;
+                    gap: 3rem;
+                
+                
+                    li{
+                        display: flex;
+                    
+                        a{
+                            font-family: sans-serif;
+                            font-size: 2rem;
+                            text-decoration: none;
+                            color: $color2;
+                            transition: 1s;
+                            
+    
+    
+    
+                            &:hover{
+                                text-decoration: underline;
+                                transform: scale(1.1);
+                            }
+                        }
+                    
+                    }  
+                }
+            }    
+        }
+    
+        main{
+            background-color: $color2;
+    
+            h2{
+                text-align: center;
+                text-decoration: underline;
+                font-family: 'DM Serif Display', serif;
+                font-size: 45px;
+                padding: 10px 0px 10px 0px; 
+            }
+    
+            .presentacion{
+                text-align: center;
+                padding: 20px 50px;
+                font-size: 25px;
+                font-family: 'DM Serif Display', serif;
+            }
+    
+            .img-video{
+                justify-content: left;
+                display: flex;
+                margin: 1rem;
+    
+                .foto{
+                    border: 5px solid;
+                    border-color: rgb(4, 4, 3);
+                    display: flex;
+                }
+    
+                .festejo-video{
+                    font-size: 25px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+    
+            }
+    
+            .p1{
+                padding: 25px 50px;
+                font-size: 25px;
+                font-family: 'DM Serif Display', serif;
+            }
+    
+            .ciudad-casa{
+                display: flex;
+    
+                .casa{
+                    display: flex;
+                    border: 5px solid;
+                    margin: 10px;
+                    border-radius: 15px;
+    
+                    .festejo-video{
+                        font-size: 25px;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                }
+            }
+    
+            .titulo{
+                text-align: center;
+                text-decoration: underline;
+                font-family: 'Volkhov', serif;
+                font-size: 35px;
+                margin: 20px 15px;
+                color: $color1;
+            }
+    
+            .video{
+                display: flex;
+                justify-content: center;
+    
+                .debut{
+                    border: 5px solid;
+                    margin: 5px 15px 5px 15px;
+                }
+            }
+    
+            .logros{
+                display: flex;
+                flex-wrap: wrap; 
+                justify-content: center;
+    
+            .titulos{
+                    width: 30%;
+                    border: 5px solid;
+                    margin: 10px;
+                }
+            }
+    
+            .individuales{
+                display: flex;
+            }
+    
+        }
+    
+    
+        footer{
+            background-color: $color1 ;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            
+            h3{
+                text-align: center;
+                text-decoration: underline;
+                font-family: 'Volkhov', serif;
+                font-size: 35px;
+                margin: 20px 15px;
+                color: $color2;
+            }
+    
+            svg{
+                fill: rgb(248, 247, 247);
+                position: relative;
+                top: 25px;
+            }
+    
+        }
+    }
+    
+}
