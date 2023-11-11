@@ -76,7 +76,7 @@
     }
     body main .img-video .foto .bordes {
       border-radius: 15px;
-      width: 100px;
+      width: 355px;
     }
     body main .img-video .festejo-video {
       font-size: 25px;
@@ -142,9 +142,7 @@
       margin: 5px 15px 5px 15px;
     }
     body main .logros {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display:none;
     }
     body main .logros .titulos {
       width: 30%;
@@ -153,6 +151,11 @@
     }
     body main .individuales {
       display: flex;
+    }
+    body main .individuales .debut{
+        border-radius: 15px;
+        margin: 5px 15px 5px 15px;
+        width: 150px;
     }
     body footer {
       background-color: rgb(0, 0, 0);
@@ -241,6 +244,7 @@
     body main .img-video {
       justify-content: left;
       display: flex;
+      flex-wrap: wrap;
       margin: 1rem;
     }
     body main .img-video .foto {
@@ -249,7 +253,7 @@
     }
     body main .img-video .foto .bordes {
       border-radius: 15px;
-      width: 300px;
+      width: 385px;
 
     }
     body main .img-video .festejo-video {
@@ -304,7 +308,7 @@
     body main .titulo .debut {
       border-radius: 15px;
       margin: 5px 15px 5px 15px;
-      width: 450px;
+      width: 400px;
     }
     body main .video {
       display: flex;
@@ -315,6 +319,12 @@
       margin: 5px 15px 5px 15px;
       width: 450px;
     }
+    body main .debut{
+        border-radius: 15px;
+        margin: 5px 15px 5px 15px;
+        width: 380px;
+    }
+        
     body main .logros {
       display: none;
     }

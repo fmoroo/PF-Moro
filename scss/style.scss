@@ -170,20 +170,31 @@ body{
             }
         }
 
+        .debut{
+            border-radius: 15px;
+            margin: 5px 15px 5px 15px;
+        }
+
         .logros{
             display: flex;
             flex-wrap: wrap; 
             justify-content: center;
 
-        .titulos{
+            .titulos{
                 width: 30%;
                 border: 5px solid;
                 margin: 10px;
+
             }
         }
 
         .individuales{
             display: flex;
+
+            .debut{
+                border-radius: 15px;
+                margin: 5px 15px 5px 15px;
+            }
         }
 
     }
