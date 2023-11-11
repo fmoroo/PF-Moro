@@ -1,612 +1,521 @@
 @import "../base/vars";
 
 
-@media (max-width :390px){
-    body{
-        /*display: grid;
-        grid-template-columns: 2.5fr 2.5fr 2.5fr;
-        grid-template-rows: 0.5fr 5fr 0.5fr;
-        grid-template-areas: 
-        "header header header"
-        "main main main"
-        "footer footer footer";
-    
-        .header{
-            grid-area: header;
-        }
-           
-        .main{
-            grid-area: main;
-        }
-           
-        .footer{
-            grid-area: footer;
-        }*/
-    
-    
-        background-color: red;
-    
-        header{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 2rem;
-            background-color: $color1;
-    
-            .logo{
-                max-width: 6rem;
-            border: 3px solid;
-            border-color: $color2;
-            }
-    
-            h1{
-                text-align: center;
-                text-decoration: underline;
-                font-family: 'DM Serif Display', serif;
-                font-size: 50px;
-                color: $color2;
-            }
-            nav{
-                display: flex;
-    
-            
-    
-                .nav-list{
-                    display: flex;
-                    list-style-type: none;
-                    gap: 3rem;
-                
-                
-                    li{
-                        display: flex;
-                    
-                        a{
-                            font-family: sans-serif;
-                            font-size: 2rem;
-                            text-decoration: none;
-                            color: $color2;
-                            transition: 1s;
-                            
-    
-    
-    
-                            &:hover{
-                                text-decoration: underline;
-                                transform: scale(1.1);
-                            }
-                        }
-                    
-                    }  
-                }
-            }    
-        }
-    
-        main{
-            background-color: $color2;
-    
-            h2{
-                text-align: center;
-                text-decoration: underline;
-                font-family: 'DM Serif Display', serif;
-                font-size: 45px;
-                padding: 10px 0px 10px 0px; 
-            }
-    
-            .presentacion{
-                text-align: center;
-                padding: 20px 50px;
-                font-size: 25px;
-                font-family: 'DM Serif Display', serif;
-            }
-    
-            .img-video{
-                justify-content: left;
-                display: flex;
-                margin: 1rem;
-    
-                .foto{
-                    border: 5px solid;
-                    border-color: rgb(4, 4, 3);
-                    display: flex;
-                }
-    
-                .festejo-video{
-                    font-size: 25px;
-                    font-weight: bold;
-                    text-align: center;
-                }
-    
-            }
-    
-            .p1{
-                padding: 25px 50px;
-                font-size: 25px;
-                font-family: 'DM Serif Display', serif;
-            }
-    
-            .ciudad-casa{
-                display: flex;
-    
-                .casa{
-                    display: flex;
-                    border: 5px solid;
-                    margin: 10px;
-                    border-radius: 15px;
-    
-                    .festejo-video{
-                        font-size: 25px;
-                        font-weight: bold;
-                        text-align: center;
-                    }
-                }
-            }
-    
-            .titulo{
-                text-align: center;
-                text-decoration: underline;
-                font-family: 'Volkhov', serif;
-                font-size: 35px;
-                margin: 20px 15px;
-                color: $color1;
-            }
-    
-            .video{
-                display: flex;
-                justify-content: center;
-    
-                .debut{
-                    border: 5px solid;
-                    margin: 5px 15px 5px 15px;
-                }
-            }
-    
-            .logros{
-                display: flex;
-                flex-wrap: wrap; 
-                justify-content: center;
-    
-            .titulos{
-                    width: 30%;
-                    border: 5px solid;
-                    margin: 10px;
-                }
-            }
-    
-            .individuales{
-                display: flex;
-            }
-    
-        }
-    
-    
-        footer{
-            background-color: $color1 ;
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            
-            h3{
-                text-align: center;
-                text-decoration: underline;
-                font-family: 'Volkhov', serif;
-                font-size: 35px;
-                margin: 20px 15px;
-                color: $color2;
-            }
-    
-            svg{
-                fill: rgb(248, 247, 247);
-                position: relative;
-                top: 25px;
-            }
-    
-        }
+@media (max-width: 390px) {
+    body {
+      background-color: blueviolet;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
     }
-    
-}
+    body header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+      background-color: rgb(0, 0, 0);
+    }
+    body header .logo {
+      max-width: 6rem;
+      margin-bottom: 15px;
+      border: 3px solid;
+      border-color: rgb(238, 100, 100);
+    }
+    body header h1 {
+      display: none;
+    }
+    body header nav {
+      display: flex;
+    }
+    body header nav .nav-list {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      gap: 1rem;
+    }
+    body header nav .nav-list li {
+      display: flex;
+    }
+    body header nav .nav-list li a {
+      font-family: sans-serif;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: rgb(238, 100, 100);
+      transition: 1s;
+    }
+    body header nav .nav-list li a:hover {
+      text-decoration: underline;
+      transform: scale(1.1);
+    }
+    body main {
+      background-color: rgb(238, 100, 100);
+    }
+    body main h2 {
+      text-align: center;
+      text-decoration: underline;
+      font-family: "DM Serif Display", serif;
+      font-size: 38px;
+      padding: 10px 0px 10px 0px;
+    }
+    body main .presentacion {
+      text-align: center;
+      padding: 20px 50px;
+      font-size: 25px;
+      font-family: "DM Serif Display", serif;
+    }
+    body main .img-video {
+      justify-content: left;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1rem;
+    }
+    body main .img-video .foto {
+      border-color: rgb(4, 4, 3);
+      display: flex;
+    }
+    body main .img-video .foto .bordes {
+      border-radius: 15px;
+      width: 100px;
+    }
+    body main .img-video .festejo-video {
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+    }
+    body main .grid-container {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+    body main .grid-container .p1 {
+      padding: 25px 50px;
+      font-size: 25px;
+      font-family: "DM Serif Display", serif;
+    }
+    body main .p1 {
+      padding: 25px 50px;
+      font-size: 25px;
+      font-family: "DM Serif Display", serif;
+    }
+    body main .ciudad-casa {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    body main .ciudad-casa .casa {
+      display: flex;
+      flex-wrap: wrap;
+      border: 5px solid;
+      margin: 10px;
+      border-radius: 15px;
+    }
+    body main .ciudad-casa .casa .bordes {
+      border-radius: 15px;
+      width: 350px;
+    }
+    body main .ciudad-casa .casa .festejo-video {
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+    }
+    body main .titulo {
+      text-align: center;
+      text-decoration: underline;
+      font-family: "Volkhov", serif;
+      font-size: 35px;
+      margin: 20px 15px;
+      color: rgb(0, 0, 0);
+    }
+    body main .titulo .debut {
+      border-radius: 15px;
+      margin: 5px 15px 5px 15px;
+      
+    }
+    body main .video {
+      display: flex;
+      justify-content: center;
+    }
+    body main .video .debut {
+      border-radius: 15px;
+      margin: 5px 15px 5px 15px;
+    }
+    body main .logros {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    body main .logros .titulos {
+      width: 30%;
+      border: 5px solid;
+      margin: 10px;
+    }
+    body main .individuales {
+      display: flex;
+    }
+    body footer {
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+    }
+    body footer h3 {
+      text-align: center;
+      text-decoration: underline;
+      font-family: "Volkhov", serif;
+      font-size: 35px;
+      margin: 20px 15px;
+      color: rgb(238, 100, 100);
+    }
+    body footer svg {
+      fill: rgb(248, 247, 247);
+      position: relative;
+      top: 25px;
+    }
+  
+  }
+  
+  
+  @media (max-width: 576px) and (min-width: 390px) {
+    body {
+      background-color: red;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background-color: rgb(0, 0, 0);
+    }
+    body header .logo {
+      max-width: 12rem;
+      border: 3px solid;
+      border-color: rgb(238, 100, 100);
+    }
+    body header h1 {
+      display: none;
+    }
+    body header nav {
+      display: flex;
+    }
+    body header nav .nav-list {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      gap: 1rem;
+    }
+    body header nav .nav-list li {
+      display: flex;
+    }
+    body header nav .nav-list li a {
+      font-family: sans-serif;
+      font-size: 2rem;
+      text-decoration: none;
+      color: rgb(238, 100, 100);
+      transition: 1s;
+    }
+    body header nav .nav-list li a:hover {
+      text-decoration: underline;
+      transform: scale(1.1);
+    }
+    body main {
+      background-color: rgb(238, 100, 100);
+    }
+    body main h2 {
+      text-align: center;
+      text-decoration: underline;
+      font-family: "DM Serif Display", serif;
+      font-size: 45px;
+      padding: 10px 0px 10px 0px;
+    }
+    body main .presentacion {
+      text-align: center;
+      padding: 20px 50px;
+      font-size: 25px;
+      font-family: "DM Serif Display", serif;
+    }
+    body main .img-video {
+      justify-content: left;
+      display: flex;
+      margin: 1rem;
+    }
+    body main .img-video .foto {
+      border-color: rgb(4, 4, 3);
+      display: flex;
+    }
+    body main .img-video .foto .bordes {
+      border-radius: 15px;
+      width: 300px;
 
-@media (max-width: 576px) and (min-width:390px) {
-    body{
-        /*display: grid;
-        grid-template-columns: 2.5fr 2.5fr 2.5fr;
-        grid-template-rows: 0.5fr 5fr 0.5fr;
-        grid-template-areas: 
-        "header header header"
-        "main main main"
-        "footer footer footer";
-    
-        .header{
-            grid-area: header;
-        }
-           
-        .main{
-            grid-area: main;
-        }
-           
-        .footer{
-            grid-area: footer;
-        }*/
-    
-        background-color: violet;
-    
-        header{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 2rem;
-            background-color: $color1;
-    
-            .logo{
-            max-width: 6rem;
-            border: 3px solid;
-            border-color: $color2;
-            }
-    
-            h1{
-                text-align: center;
-                text-decoration: underline;
-                font-family: 'DM Serif Display', serif;
-                font-size: 50px;
-                color: $color2;
-            }
-            nav{
-                display: flex;
-    
-            
-    
-                .nav-list{
-                    display: flex;
-                    list-style-type: none;
-                    gap: 3rem;
-                
-                
-                    li{
-                        display: flex;
-                    
-                        a{
-                            font-family: sans-serif;
-                            font-size: 2rem;
-                            text-decoration: none;
-                            color: $color2;
-                            transition: 1s;
-                            
-    
-    
-    
-                            &:hover{
-                                text-decoration: underline;
-                                transform: scale(1.1);
-                            }
-                        }
-                    
-                    }  
-                }
-            }    
-        }
-    
-        main{
-            background-color: $color2;
-    
-            h2{
-                text-align: center;
-                text-decoration: underline;
-                font-family: 'DM Serif Display', serif;
-                font-size: 45px;
-                padding: 10px 0px 10px 0px; 
-            }
-    
-            .presentacion{
-                text-align: center;
-                padding: 20px 50px;
-                font-size: 25px;
-                font-family: 'DM Serif Display', serif;
-            }
-    
-            .img-video{
-                justify-content: left;
-                display: flex;
-                margin: 1rem;
-    
-                .foto{
-                    border: 5px solid;
-                    border-color: rgb(4, 4, 3);
-                    display: flex;
-                }
-    
-                .festejo-video{
-                    font-size: 25px;
-                    font-weight: bold;
-                    text-align: center;
-                }
-    
-            }
-    
-            .p1{
-                padding: 25px 50px;
-                font-size: 25px;
-                font-family: 'DM Serif Display', serif;
-            }
-    
-            .ciudad-casa{
-                display: flex;
-    
-                .casa{
-                    display: flex;
-                    border: 5px solid;
-                    margin: 10px;
-                    border-radius: 15px;
-    
-                    .festejo-video{
-                        font-size: 25px;
-                        font-weight: bold;
-                        text-align: center;
-                    }
-                }
-            }
-    
-            .titulo{
-                text-align: center;
-                text-decoration: underline;
-                font-family: 'Volkhov', serif;
-                font-size: 35px;
-                margin: 20px 15px;
-                color: $color1;
-            }
-    
-            .video{
-                display: flex;
-                justify-content: center;
-    
-                .debut{
-                    border: 5px solid;
-                    margin: 5px 15px 5px 15px;
-                }
-            }
-    
-            .logros{
-                display: flex;
-                flex-wrap: wrap; 
-                justify-content: center;
-    
-            .titulos{
-                    width: 30%;
-                    border: 5px solid;
-                    margin: 10px;
-                }
-            }
-    
-            .individuales{
-                display: flex;
-            }
-    
-        }
-    
-    
-        footer{
-            background-color: $color1 ;
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            
-            h3{
-                text-align: center;
-                text-decoration: underline;
-                font-family: 'Volkhov', serif;
-                font-size: 35px;
-                margin: 20px 15px;
-                color: $color2;
-            }
-    
-            svg{
-                fill: rgb(248, 247, 247);
-                position: relative;
-                top: 25px;
-            }
-    
-        }
     }
-    
-}
-
-@media (max-width: 992px) and (min-width:576px) {
-    body{
-        /*display: grid;
-        grid-template-columns: 2.5fr 2.5fr 2.5fr;
-        grid-template-rows: 0.5fr 5fr 0.5fr;
-        grid-template-areas: 
-        "header header header"
-        "main main main"
-        "footer footer footer";
-    
-        .header{
-            grid-area: header;
-        }
-           
-        .main{
-            grid-area: main;
-        }
-           
-        .footer{
-            grid-area: footer;
-        }*/
-    
-        background-color: yellow;
-    
-        header{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 2rem;
-            background-color: $color1;
-    
-            .logo{
-                max-width: 6rem;
-            border: 3px solid;
-            border-color: $color2;
-            }
-    
-            h1{
-                text-align: center;
-                text-decoration: underline;
-                font-family: 'DM Serif Display', serif;
-                font-size: 50px;
-                color: $color2;
-            }
-            nav{
-                display: flex;
-    
-            
-    
-                .nav-list{
-                    display: flex;
-                    list-style-type: none;
-                    gap: 3rem;
-                
-                
-                    li{
-                        display: flex;
-                    
-                        a{
-                            font-family: sans-serif;
-                            font-size: 2rem;
-                            text-decoration: none;
-                            color: $color2;
-                            transition: 1s;
-                            
-    
-    
-    
-                            &:hover{
-                                text-decoration: underline;
-                                transform: scale(1.1);
-                            }
-                        }
-                    
-                    }  
-                }
-            }    
-        }
-    
-        main{
-            background-color: $color2;
-    
-            h2{
-                text-align: center;
-                text-decoration: underline;
-                font-family: 'DM Serif Display', serif;
-                font-size: 45px;
-                padding: 10px 0px 10px 0px; 
-            }
-    
-            .presentacion{
-                text-align: center;
-                padding: 20px 50px;
-                font-size: 25px;
-                font-family: 'DM Serif Display', serif;
-            }
-    
-            .img-video{
-                justify-content: left;
-                display: flex;
-                margin: 1rem;
-    
-                .foto{
-                    border: 5px solid;
-                    border-color: rgb(4, 4, 3);
-                    display: flex;
-                }
-    
-                .festejo-video{
-                    font-size: 25px;
-                    font-weight: bold;
-                    text-align: center;
-                }
-    
-            }
-    
-            .p1{
-                padding: 25px 50px;
-                font-size: 25px;
-                font-family: 'DM Serif Display', serif;
-            }
-    
-            .ciudad-casa{
-                display: flex;
-    
-                .casa{
-                    display: flex;
-                    border: 5px solid;
-                    margin: 10px;
-                    border-radius: 15px;
-    
-                    .festejo-video{
-                        font-size: 25px;
-                        font-weight: bold;
-                        text-align: center;
-                    }
-                }
-            }
-    
-            .titulo{
-                text-align: center;
-                text-decoration: underline;
-                font-family: 'Volkhov', serif;
-                font-size: 35px;
-                margin: 20px 15px;
-                color: $color1;
-            }
-    
-            .video{
-                display: flex;
-                justify-content: center;
-    
-                .debut{
-                    border: 5px solid;
-                    margin: 5px 15px 5px 15px;
-                }
-            }
-    
-            .logros{
-                display: flex;
-                flex-wrap: wrap; 
-                justify-content: center;
-    
-            .titulos{
-                    width: 30%;
-                    border: 5px solid;
-                    margin: 10px;
-                }
-            }
-    
-            .individuales{
-                display: flex;
-            }
-    
-        }
-    
-    
-        footer{
-            background-color: $color1 ;
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            
-            h3{
-                text-align: center;
-                text-decoration: underline;
-                font-family: 'Volkhov', serif;
-                font-size: 35px;
-                margin: 20px 15px;
-                color: $color2;
-            }
-    
-            svg{
-                fill: rgb(248, 247, 247);
-                position: relative;
-                top: 25px;
-            }
-    
-        }
+    body main .img-video .festejo-video {
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
     }
-    
-}
+    body main .grid-container {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    body main .grid-container .p1 {
+      padding: 25px 50px;
+      font-size: 25px;
+      font-family: "DM Serif Display", serif;
+    }
+    body main .p1 {
+      padding: 25px 50px;
+      font-size: 25px;
+      font-family: "DM Serif Display", serif;
+    }
+    body main .ciudad-casa {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    body main .ciudad-casa .casa {
+      display: flex;
+      border: 5px solid;
+      margin: 10px;
+      border-radius: 15px;
+    }
+    body main .ciudad-casa .casa .bordes {
+      border-radius: 15px;
+      width: 200px;
+    }
+    body main .ciudad-casa .casa .festejo-video {
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+    }
+    body main .titulo {
+      text-align: center;
+      text-decoration: underline;
+      font-family: "Volkhov", serif;
+      font-size: 35px;
+      margin: 20px 15px;
+      color: rgb(0, 0, 0);
+    }
+    body main .titulo .debut {
+      border-radius: 15px;
+      margin: 5px 15px 5px 15px;
+      width: 450px;
+    }
+    body main .video {
+      display: flex;
+      justify-content: center;
+    }
+    body main .video .debut {
+      border-radius: 15px;
+      margin: 5px 15px 5px 15px;
+      width: 450px;
+    }
+    body main .logros {
+      display: none;
+    }
+    body main .logros .titulos {
+      width: 30%;
+      border: 5px solid;
+      margin: 10px;
+    }
+    body main .individuales {
+      display: flex;
+    }
+    body footer {
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+    }
+    body footer h3 {
+      text-align: center;
+      text-decoration: underline;
+      font-family: "Volkhov", serif;
+      font-size: 35px;
+      margin: 20px 15px;
+      color: rgb(238, 100, 100);
+    }
+    body footer svg {
+      fill: rgb(248, 247, 247);
+      position: relative;
+      top: 25px;
+    }
+  }
+  
+  
+  @media (max-width: 992px) and (min-width: 576px) {
+    body {
+      background-color: yellow;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+      background-color: rgb(0, 0, 0);
+    }
+    body header .logo {
+      max-width: 4rem;
+      border: 3px solid;
+      border-color: rgb(238, 100, 100);
+    }
+    body header h1 {
+      text-align: center;
+      text-decoration: underline;
+      font-family: "DM Serif Display", serif;
+      font-size: 40px;
+      color: rgb(238, 100, 100);
+    }
+    body header nav {
+      display: flex;
+    }
+    body header nav .nav-list {
+      display: flex;
+      list-style-type: none;
+      gap: 1rem;
+    }
+    body header nav .nav-list li {
+      display: flex;
+    }
+    body header nav .nav-list li a {
+      font-family: sans-serif;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: rgb(238, 100, 100);
+      transition: 1s;
+    }
+    body header nav .nav-list li a:hover {
+      text-decoration: underline;
+      transform: scale(1.1);
+    }
+    body main {
+      background-color: rgb(238, 100, 100);
+    }
+    body main h2 {
+      text-align: center;
+      text-decoration: underline;
+      font-family: "DM Serif Display", serif;
+      font-size: 45px;
+      padding: 10px 0px 10px 0px;
+    }
+    body main .presentacion {
+      text-align: center;
+      padding: 20px 50px;
+      font-size: 25px;
+      font-family: "DM Serif Display", serif;
+    }
+    body main .img-video {
+      justify-content: left;
+      display: flex;
+      margin: 1rem;
+    }
+    body main .img-video .foto {
+      border-color: rgb(4, 4, 3);
+      display: flex;
+    }
+    body main .img-video .foto .bordes {
+      border-radius: 15px;
+      width: 500px;
+    }
+    body main .img-video .festejo-video {
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+    }
+    body main .grid-container {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    body main .grid-container .p1 {
+      padding: 25px 50px;
+      font-size: 25px;
+      font-family: "DM Serif Display", serif;
+    }
+    body main .p1 {
+      padding: 25px 50px;
+      font-size: 25px;
+      font-family: "DM Serif Display", serif;
+    }
+    body main .ciudad-casa {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    body main .ciudad-casa .casa {
+      display: flex;
+      border: 5px solid;
+      margin: 10px;
+      border-radius: 15px;
+    }
+    body main .ciudad-casa .casa .bordes {
+      border-radius: 15px;
+      width: 400px;
+    }
+    body main .ciudad-casa .casa .festejo-video {
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+    }
+    body main .titulo {
+      text-align: center;
+      text-decoration: underline;
+      font-family: "Volkhov", serif;
+      font-size: 35px;
+      margin: 20px 15px;
+      color: rgb(0, 0, 0);
+    }
+    body main .titulo .debut {
+      border-radius: 15px;
+      margin: 5px 15px 5px 15px;
+    }
+    body main .video {
+      display: flex;
+      justify-content: center;
+    }
+    body main .video .debut {
+      border-radius: 15px;
+      margin: 5px 15px 5px 15px;
+    }
+    body main .logros {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    body main .logros .titulos {
+      width: 30%;
+      border: 5px solid;
+      margin: 10px;
+    }
+    body main .individuales {
+      display: flex;
+    }
+    body footer {
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+    }
+    body footer h3 {
+      text-align: center;
+      text-decoration: underline;
+      font-family: "Volkhov", serif;
+      font-size: 35px;
+      margin: 20px 15px;
+      color: rgb(238, 100, 100);
+    }
+    body footer svg {
+      fill: rgb(248, 247, 247);
+      position: relative;
+      top: 25px;
+    }
+  }
